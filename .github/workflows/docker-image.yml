@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag zvx/docker-react:$(date +%s)
+      run: docker build . --file Dockerfile.dev --tag zvx/docker-react:$(date +%s)
